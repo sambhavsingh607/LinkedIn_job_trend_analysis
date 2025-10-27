@@ -1,50 +1,42 @@
-# 💼 LinkedIn Job Trend Analysis (Web Scraping)
+# LinkedIn Job Trend Analysis
 
-### 📊 Analyze Skill Demand and Job Trends Across Cities and Roles using Python
+## Overview
+This project analyzes LinkedIn job postings to identify trending skills across different cities and job roles using Python and data visualization.
 
----
+## Objective
+- Collect or simulate LinkedIn job data (title, company, skills, location)
+- Clean and parse skill information using Pandas
+- Generate visualizations showing top in-demand skills by city
+- Derive insights about job market demand trends
 
-## 🚀 **Project Overview**
+## Tools Used
+- Python
+- BeautifulSoup
+- Pandas
+- Matplotlib / Seaborn
+- Jupyter Notebook (Anaconda)
 
-This project focuses on analyzing job market trends by scraping LinkedIn job postings to identify **in-demand skills, roles, and city-based hiring patterns**.  
-Using **Python**, **BeautifulSoup**, and **Pandas**, the project automates data extraction, cleaning, visualization, and insight generation — giving a clear view of **which skills are most required for different roles across major cities**.
+## Steps Performed
+1. Created mock LinkedIn job data and saved it as `data/mock_jobs.csv`
+2. Cleaned and parsed skill tags using Pandas
+3. Counted skill frequencies and grouped data by city
+4. Generated two main visualizations:
+   - Bar chart of top 10 skills
+   - Heatmap showing skills by city
+5. Saved output images in the `visuals` folder
 
----
+## Folder Structure
+LinkedIn_Job_Trend_Analysis/
+│
+├── data/
+│   └── mock_jobs.csv
+│
+├── visuals/
+│   ├── skill_heatmap.png
+│   └── top_skills_chart.png
+│
+├── linkedin_scraper.ipynb
+└── README.md
 
-## 🎯 **Objectives**
-
-- Scrape job data (titles, companies, locations, and skills) from LinkedIn.  
-- Clean and preprocess raw HTML data using Pandas.  
-- Identify top 10 skills per city and visualize trends.  
-- Build a **Skill vs Role matrix** to compare demand across job titles.  
-- Generate recommendations and insights for job seekers and recruiters.
-
----
-
-## 🧰 **Tools and Libraries Used**
-
-| Tool / Library | Purpose |
-|----------------|----------|
-| **Python** | Core programming language |
-| **BeautifulSoup** | Web scraping job details |
-| **Requests** | Sending HTTP requests |
-| **Pandas** | Data cleaning & manipulation |
-| **Matplotlib / Seaborn** | Visualizations and heatmaps |
-| **Excel** | Data export & reporting |
-| **ReportLab** | PDF report generation |
-
----
-
-## ⚙️ **Project Workflow**
-
-1. **Data Collection**
-   - Extract job title, company, location, and skills using BeautifulSoup and Requests.
-   - Store scraped data in a structured DataFrame.
-
-2. **Data Cleaning & Preparation**
-   - Handle duplicates, missing values, and inconsistent skill tags.
-   - Normalize skill names (e.g., “python”, “Python”, and “PYTHON” merged).
-
-3. **Data Analysis**
-   - Count frequency of each skill across roles and cities.
-   - Create a **Skill**
+## Conclusion
+This mini project demonstrates how Python can be used to analyze job market trends through data scraping and visualization. It provides insight into the most in-demand skills and cities, and can be extended to real-time LinkedIn data in future versions.
